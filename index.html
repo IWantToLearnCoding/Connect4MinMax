@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Artificial Intelligence based on the Minimax- and α-β-Pruning principles.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Connect Four - Alpha-Beta Algorithm</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <h1 class="header-text">Beat Raj F Paul</h1>
+
+            <div class="box-left">
+                <table id="game_board" cellpadding="0"></table>
+                <div id="loading">Wait Raj, I am thinking...</div>
+            </div>
+
+            <div class="box-right">
+                <div id="options">
+                    <p><button class="save" onclick="Game.restartGame();" type="submit">Restart game</button></p>
+                    <p><button class="save" onclick="Game.stopGame();" type="submit">Stop</button></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/board.js"></script>
+        <script src="js/connect4AB.js"></script>
+    </body>
+</html>
